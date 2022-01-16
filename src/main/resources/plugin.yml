@@ -1,0 +1,14 @@
+name: Poll
+version: ${project.version}
+main: com.steamsworld.plugins.PollsPlugin
+authors: [Steamworks, Bice8687]
+description: Ask your community questions!
+api-version: 1.13
+
+commands:
+  poll:
+    description: The main command for this plugin.
+  sendpoll:
+    description: Send a player an specific poll.
+  votes:
+    description: View the community impact of a poll.

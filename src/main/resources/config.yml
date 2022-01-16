@@ -1,0 +1,42 @@
+#    ______   ______     __         __         ______
+#   /\  == \ /\  __ \   /\ \       /\ \       /\  ___\
+#   \ \  _-/ \ \ \/\ \  \ \ \____  \ \ \____  \ \___  \
+#   \ \_\    \ \_____\  \ \_____\  \ \_____\  \/\_____\
+#   \/_/     \/_____/   \/_____/   \/_____/   \/_____/
+#
+# Polls v1.0.0 created by Steamworks, and Bice8687
+# Easily ask your community questions!
+
+# Configure the questions that are asked to the community.
+questions:
+  version:
+    message: "&e&lVERSION &eWhat version should our next server run on?"
+    answers:
+      - "&c1.18.1"
+      - "&c1.17.1"
+      - "&c1.8.8"
+      - "&c1.6.4"
+
+# Configure that system that announces questions to the player between certain interval(s).
+announcer:
+  enabled: false # If the announcer is enabled.
+  in-order: false # If the announcer should ask the questions in order rather than randomly.
+  interval: 300 # How frequent we should broadcast a poll. (*in seconds*)
+
+# Configure the messages that are sent to players.
+messages:
+  vote-usage: "&c&l(!) &cIncorrect usage! &c/votes [id]"
+  send-usage: "&c&l(!) &cIncorrect usage! &c/sendpoll [player name|all] [id]"
+  poll-usage: "&c&l(!) &cIncorrect usage! &c/poll <reload|vote> [id] [answer]"
+  hover: "&aClick to vote!"
+  question-not-found: "&cThe question &e'{id}' &ccould not be found."
+  vote-for: "&e&lVotes for &e'{question}'"
+  answer: "{answer} &rhas &e{votes} vote(s)!"
+  no-permission: "&c&l(!) &cYou do not have permission to run this command!"
+  player-not-found: "&c&l(!) &cA player with the name of &e'{name}' &cis not online."
+  sent-poll: "&aSuccessfully sent poll!"
+  reloaded: "&aSuccessfully reloaded plugin!"
+  no-console: "&c&l(!) &cYou cannot vote as the console."
+  already-voted: "&c&l(!) &cYou already voted for this poll."
+  invalid-answer: "&c&l(!) &cYou provided an invalid answer. Provide one of the following: &e{options}"
+  voted: "&a&l(!) &aYou have voted successfully."
